@@ -1,0 +1,86 @@
+body {
+    background-color: #1e314f;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,229,1) 100%);
+    font-family: "Helvetica Rounded", "Arial Rounded MT Bold", "Montserrat",
+      sans-serif;
+    color: #fff;
+    margin:0;
+    min-width: 250px;
+  }
+
+* {
+  box-sizing: border-box;
+  }
+
+h2 {
+  margin: 5px;
+  text-align: center;
+  font-size: medium;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 40px;
+  padding-top: 40px;
+  }
+
+input {
+  width: 50%;
+  height: 35px;
+  align-self: center;
+}
+
+#addBtn {
+  padding: 10px;
+  width: 25%;
+  color: #fff;
+  float: left;
+  text-align: center;
+  font-size: medium;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: transparent;
+  font-size: 14px;
+  transition: 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select:none;
+  user-select: none;
+}
+
+ul li.checked{
+  font-family: FontAwesome;
+  float: left;
+  margin-left: -1.5em;
+  content: "\f1ce";
+  color: #424242;
+  transform: scale(1, 1);
+  position: absolute;
+  margin-top: 2px;
+}
+
+ul li.checked::before {
+  font-family: FontAwesome;
+  float: left;
+  margin-left: -1.5em;
+  content: "\f00d";
+  color: #888888;
+  transform: scale(1, 1);
+  position: absolute;
+  margin-top: 2px;
+
+}

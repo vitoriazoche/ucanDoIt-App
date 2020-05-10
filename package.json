@@ -1,0 +1,13 @@
+{
+  "name": "uCanDoIt-app",
+  "version": "1.0.0",
+  "description": "aplicativo minimalista para organizar e completar tarefas",
+  "main": "index.js",
+  "repository": "https://github.com/vitoriazoche/ucanDoIt-App.git",
+  "author": "vitoria zoche",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1"
+  }
+}
