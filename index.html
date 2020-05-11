@@ -4,31 +4,35 @@
         <link rel="stylesheet" type="text/css" href="css/estilo.css" />
         <link rel="stylesheet" type="text/css" href="css/dark-mode.css" />
         <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+       
+        <!-- Font Awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/b6b0d562ad.js" crossorigin="anonymous"></script>
 
         <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     </head>
-    <body><h2>StuWork Focus</h2>
-        <div id="myDIV" class="input-group mb-3">
-            
-            <div class="input-group-prepend" onclick="newElement()">
-              <span class="btn" id="addBtn">+</span>
-            </div>
-            <input type="text" class="form-control" id="myInput" placeholder="Add task">
+    <body>
+
+      <div class="container">
+        <h2>StuWork Focus</h2>
+          <div id="myDIV" class="input-group mb-3">
+            <span class="btn" id="addBtn" onclick="newElement()">+</span>
+            <input type="text"  id="myInput" placeholder="Add task">
           </div>
           
           <ul id="myUL"></ul>
 
-          <div class="sidenav" id="myNav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-              <a href="#" class="btn">Timer</a>
-              <a href="#" class="btn">Info</a>
-              <a href="#" class="btn">Feedback</a>
-              <a href="#" class="btn">DarkMode</a>
-
-          </div>
-        
-          <script type="text/javascript" src="js/animacoes.js"></script>
+          <footer class="fixed-bottom">
+            <div class="sidenav" id="myNav">
+              <a href="#" class="btn"><i class="far fa-clock fa-2x text-white"></i></a>
+              <a href="#" class="btn"><i class="fas fa-info-circle fa-2x text-white"></i></a>
+              <a href="#" class="btn"><i class="far fa-comment-alt fa-2x text-white"></i></a>
+              <a href="#" class="btn"><i class="far fa-moon fa-2x text-white"></i></a>
+            </div>
+          </footer>
+      </div>
+    
+    <script type="text/javascript" src="js/animacoes.js"></script>
     </body>
-    </html>
+</html>
